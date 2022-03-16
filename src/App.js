@@ -5,14 +5,28 @@ const singer = {name : 'Dr. Mahfuz' , job:'SInger'}
 const singer2 = {name: 'Eva Rahaman' , job : 'Female Singer'}
 
 function App() {
+  const nayoks = ['Rubel', 'Bappa Raj', 'Kuber', 'joshim' , 'Salman Khan' , 'Bappa Dao']
+  const nayikas = ['Moushumi' ,'Shabnur' , 'Sabana' , 'Popi', 'Katrina' , 'Cheka']
   return (
     <div className="App">
-      <Person name="Rubel" nayik="Shabnur"></Person>
-      <Person name="Nayok BappRaz" nayik="Moushumi"></Person>
-      <Person name="Nayok BappRaz" nayik="Moushumi"></Person>
-      <Person name="Nayok Kuber" nayik="KoPila"></Person>
+      {
+        nayoks.map(nayok => <li>{nayok  }</li>)
+      }
+        {
+        nayikas.map(nayika => <li>{nayika}</li>)
+      }
+      {
+        nayoks.map(nayok => <Person name = {nayok}></Person>)
+      }
+      {/* {
+        nayikas.map(nayika => <Person Nayika ={nayika}></Person>)
+      } */}
+      {/* <Person name= {nayoks[0]} nayik="Shabnur"></Person>
+      <Person name={nayoks[1]} nayik="Moushumi"></Person>
+      <Person name={nayoks[1]} nayik="Moushumi"></Person>
+      <Person name={nayoks[2]}nayik="KoPila"></Person>
       <Person name="Shakib Khan" nayik="Opu Bishawas"></Person>
-      <Person name="Jodu Modu" nayik="Solima"></Person>
+      <Person name="Jodu Modu" nayik="Solima"></Person> */}
       <Friend name="Kodu" phone="0999"></Friend>
       <Friend name="Modu" phone="016235"></Friend>
       <Friend name="Jodu" phone="0125697"></Friend>
